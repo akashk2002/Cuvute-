@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #FFCD9E;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            /* Center the flex container horizontally */
+        }
+        
+        .flex-container {
+            display: flex;
+            flex: 0.7;
+            /* Occupies 70% of the viewport height */
+            justify-content: center;
+            /* Center the flex items horizontally */
+            align-items: center;
+            /* Center the flex items vertically */
+        }
+        
+        .left-flex {
+            flex: 1;
+            padding: 20px;
+            /* Adjust padding as needed */
+            text-align: left;
+            /* Center text content */
+        }
+        
+        .right-flex {
+            flex: 1;
+            padding: 20px;
+            /* Adjust padding as needed */
+            text-align: center;
+            /* Center text content */
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: inline;
+        }
+        
+        footer {
+            background-color: #282828;
+            color: #fff;
+            padding: 20px;
+            /* Adjust padding as needed */
+            width: 100%;
+            flex: 0.4;
+            /* Occupies 30% of the viewport height */
+            display: flex;
+            justify-content: space-around;
+            /* Distribute flex items evenly */
+            align-items: center;
+        }
+        
+        .footer-flex {
+            flex: 1;
+            text-align: left;
+            padding-left: 370px;
+        }
+        
+        .footer-flex1 {
+            flex: 1;
+            text-align: right;
+            padding-right: 500px;
+            padding-left: 0px;
+        }
+        /* New styles for input and button */
+        
+        .input-field {
+            width: 344px;
+            height: 64px;
+            border-radius: 8px;
+            border: 4px solid #000;
+            /* Border color can be adjusted */
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        
+        .register-button {
+            width: 216px;
+            height: 64px;
+            border-radius: 8px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .foot-left {
+            padding: 50px;
+        }
+    </style>
+    <title>Flexbox Website</title>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="left-flex">
+            <h1>An inspiring design delivered to<br/>your inbox every morning</h1>
+            <p>Our team scouts the internet for the best designs,<br/>illustrations and art and delivers a truly inspiring<br/>one every day to your inbox</p>
+            <h4>Show me how it looks</h4>
+            <input type="email" class="input-field" placeholder="Your e-mail address">
+            <button class="register-button">Register Now</button>
+            <br/>
+            <a style="font-size: 10px; color: white;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Free - No Spam - No Data Sharing</a>
+        </div>
+        <div class="right-flex">
+            <img src="img.svg" alt="Your Image">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-flex">
+            <p>Prompt Generator</p>
+            <p>Dweep Daily</p>
+            <p>All Contributors</p>
+            <p>Your data on Dweep.io</p>
+            <p>Contribute to Dweep</p>
+        </div>
+        <div class="footer-flex1">
+            <p> Dweep.io</p>
+            <p>Made with love in India</p>
+            <link style="padding-left: 100px;"><img src="inst.png" alt="Instagram" width="5%" height="5%"></link>
+            <link style="padding-left: 100px;"><img src="link.png" alt="Instagram" width="5%" height="5%"></link>
+            <br/>
+            <p>hello@dweep.io</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
